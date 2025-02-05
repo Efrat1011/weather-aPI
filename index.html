@@ -1,32 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather</title>
+    <title>Погода Казахстан</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="input-box">
-        <input type="search" name="search" placeholder="Serach...." class="input">
-        <button class="button1">
-            <img src="image/search.svg" alt="" width="10px" height="10px">
-        </button>
+
+<header>
+    <h1>Weather Kazakhstan</h1><br>
+    <form class="search"><br>
+        <input id="search" type="text"  pattern="" placeholder="Search......" />
+    <button id="btns-search"><img  src="image/search.svg" class="lupa" alt="" /> </button>
+      </form>
+</header>
+<nav class="btns1">
+    <button class="knopka" id="selected-btn">My city</и>
+    <button class="knopka" id="btnKZ">Kazakhstan cityes</button>
+</nav>
+<div class="selected-weather">
+
+</div>
+
+<div class="weather-container">
+    <div class="weather-card" id="weather1">
+        <h2 id="city1">Алматы</h2>
+        <p class="temperature" id="temp1">--°C</p>
+        <p><img id="icon1" class="icon" src="" alt="Иконка"> <span id="desc1">---</span></p>
+        <p id="humidity1">Влажность: --%</p>
+        <p id="wind1">Ветер: -- м/с</p>
     </div>
-    <h1 class="h1">Almaty</h1> 
-    <div class="Almaty-weather">
-        
-        <img class="sun-removebg-preview" src="image/sun-removebg-preview.png" alt="">
-        <h2 class="h2">20℃</h2>
+
+    <div class="weather-card" id="weather2">
+        <h2 id="city2">Астана</h2>
+        <p class="temperature" id="temp2">--°C</p>
+        <p><img id="icon2" class="icon" src="" alt="Иконка"> <span id="desc2">---</span></p>
+        <p id="humidity2">Влажность: --%</p>
+        <p id="wind2">Ветер: -- м/с</p>
     </div>
 
-    <div class="time">
-        <h2 class="timer">10:40 AM</h2>
-        <h5 class="data">Monday, 3 February 2025</h5>
+    <div class="weather-card" id="weather3">
+        <h2 id="city3">Шымкент</h2>
+        <p class="temperature" id="temp3">--°C</p>
+        <p><img id="icon3" class="icon" src="" alt="Иконка"> <span id="desc3">---</span></p>
+        <p id="humidity3">Влажность: --%</p>
+        <p id="wind3">Ветер: -- м/с</p>
     </div>
+</div>
 
+<script src="script/script.js">
+  
+</script>
 
-
-    <script src="script/script.js"></script>
 </body>
 </html>
